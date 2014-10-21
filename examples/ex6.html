@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Asteroid hopping in the main belt (requires PyGMO) &mdash; PyKEP 1.1.4 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.1.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="PyKEP 1.1.4 documentation" href="../index.html" />
+    <link rel="up" title="Examples" href="index.html" />
+    <link rel="next" title="Credits" href="../credits.html" />
+    <link rel="prev" title="MGA 1DSM global optimization" href="ex5.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../credits.html" title="Credits"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ex5.html" title="MGA 1DSM global optimization"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../index.html">PyKEP 1.1.4 documentation</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Examples</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="asteroid-hopping-in-the-main-belt-requires-pygmo">
+<h1>Asteroid hopping in the main belt (requires PyGMO)<a class="headerlink" href="#asteroid-hopping-in-the-main-belt-requires-pygmo" title="Permalink to this headline">¶</a></h1>
+<div class="figure align-left">
+<img alt="../_images/gallery6.gif" src="../_images/gallery6.gif" />
+</div>
+<p>THis plot is produced by the following code:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">PyKEP</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">examples</span><span class="o">.</span><span class="n">run_example6</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>if a feasible solution is reached. Repeat several times in case unfeasible solutions are returned.</p>
+<p>This example demonstrates the use of the mr_lt_nep class in the trajopt module to design a hopping mission
+between main belt asteroids. The class derives from
+PyGMO problem.base and represents the optimization of a multiple randezvous mission of a low-thrust spacecraft.
+The initial guess is taken from one of the trajectory submitted by the ACT/ISAS team to the 7th edition
+of the <a class="reference external" href="http://sophia.estec.esa.int/gtoc_portal/">global trajectory optimisation competition</a>. In essence it tries to hop between four different asteroids of the main belt.</p>
+<p>The code for this example can be studied <a class="reference external" href="https://github.com/esa/pykep/blob/master/PyKEP/examples/_ex6.py">here.</a> Feel free to leave comments.</p>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ex5.html"
+                        title="previous chapter">MGA 1DSM global optimization</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../credits.html"
+                        title="next chapter">Credits</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/examples/ex6.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../credits.html" title="Credits"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ex5.html" title="MGA 1DSM global optimization"
+             >previous</a> |</li>
+        <li><a href="../index.html">PyKEP 1.1.4 documentation</a> &raquo;</li>
+          <li><a href="index.html" >Examples</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, PyKEP Development Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>
